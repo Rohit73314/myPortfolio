@@ -1,0 +1,48 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# === Core dependencies & builds (never commit these) ===
+node_modules/
+dist/
+.vite/
+.cache/
+.parcel-cache/   # if you ever experiment with Parcel
+
+# === Vite / React / Tailwind specific ===
+dist-ssr/        # if using SSR mode
+*.log
+coverage/
+playwright-report/
+test-results/
+
+# === Environment & secrets ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Editor / OS junk ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# === Logs & temp files ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock    # ← optional: keep if using yarn, but many Vite devs prefer package-lock.json only
+*.tgz
+
+# === Large backups / zips (prevents future accidents) ===
+*.zip
+*.rar
+*.7z
+portfolio.zip    # ← specifically targets your file if still around
+
+# === Testing & reports ===
+coverage/
