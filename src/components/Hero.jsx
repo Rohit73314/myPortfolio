@@ -13,7 +13,7 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
   const link = document.createElement('a');
-  link.href = personalInfo.resumeUrl;
+  link.href = `${process.env.PUBLIC_URL}/RohitCv.pdf`;
   link.download = `Rohit-Resume-${new Date().getFullYear()}.pdf`;
   document.body.appendChild(link);
   link.click();
