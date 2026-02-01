@@ -120,7 +120,7 @@ const About = () => {
             <div className="mt-6 p-6 bg-gradient-to-r from-cyan-600 to-teal-600 rounded-2xl text-white">
               <h3 className="text-xl font-bold mb-2">Looking for opportunities</h3>
               <p className="text-cyan-50">
-                Open to exciting full-stack development roles where I can contribute to building impactful products and grow with a talented team.
+                Open to exciting full-stack and backend development roles where I can contribute to building impactful products and grow with a talented team.
               </p>
             </div>
           </div>
