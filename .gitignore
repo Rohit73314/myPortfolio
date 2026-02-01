@@ -7,6 +7,7 @@ dist/
 .cache/
 .parcel-cache/   # if you ever experiment with Parcel
 
+
 # === Vite / React / Tailwind specific ===
 dist-ssr/        # if using SSR mode
 *.log
@@ -20,6 +21,7 @@ test-results/
 .env.development.local
 .env.test.local
 .env.production.local
+
 
 # === Editor / OS junk ===
 .DS_Store
