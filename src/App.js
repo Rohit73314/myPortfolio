@@ -42,7 +42,7 @@ const Portfolio = () => {
 function App() {
   return (
     <ErrorBoundary>
-      <BrowserRouter>
+      <BrowserRouter basename="/myPortfolio">
         <Suspense fallback={<Loading message="Loading Portfolio..." />}>
           <Routes>
             <Route path="/" element={<Portfolio />} />
