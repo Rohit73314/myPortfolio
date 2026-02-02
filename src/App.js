@@ -15,6 +15,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import DarkModeToggle from "./components/DarkModeToggle";
 import ScrollProgress from "./components/ScrollProgress";
+import Education from "./components/Education";
 import { Toaster } from "./components/ui/toaster";
 
 const Portfolio = () => {
@@ -25,6 +26,7 @@ const Portfolio = () => {
       <main id="home">
         <Hero />
         <About />
+        <Education />
         <Experience />
         <Projects />
         <Skills />

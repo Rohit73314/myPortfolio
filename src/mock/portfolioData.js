@@ -32,7 +32,7 @@ export const experience = [
   {
     id: 1,
     company: "Nibble Software Technologies PVT LTD",
-    position: "Jr. Web Developer",
+    position: "Jr. Backend Developer",
     duration: "April 2025 - Present",
     location: "Delhi, India",
     type: "Full-time",
