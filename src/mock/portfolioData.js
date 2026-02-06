@@ -146,7 +146,7 @@ export const projects = [
     technologies: ["PHP", "Laravel", "MySQL", "Bootstrap"],
     category: "Web Application",
     image: "/projects/alumni.jpg",
-    link: "",
+    link: "https://rohit73314.github.io/alumni-tracking-system/",
     github: "",
     status: "Completed"
   }
