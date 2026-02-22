@@ -130,7 +130,7 @@ export const projects = [
     image: "/projects/karzandolls.jpg",
     link: "https://karzanddolls.in/",
     github: "",
-    status: "In Progress"
+    status: "Completed"
   },
   {
     id: 4,
