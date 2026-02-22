@@ -114,7 +114,7 @@ export const projects = [
     title: "Karzandolls",
     subtitle: "Collectibles E-commerce Platform",
     description: "Rebuilding an existing collectibles e-commerce site with modern tech stack. Migrating from CodeIgniter to Laravel backend with Next.js frontend for improved performance and scalability.",
-    longDescription: "A complete platform overhaul focusing on performance, user experience, and scalability. Implementing modern best practices and optimizing for high traffic scenarios.",
+    longDescription: "A complete platform overhaul focusing on performance, user experience, and scalability. Implementing modern best practices and optimizing for high traffic scenarios, including backend-managed shipping operations via DTDC integration.",
     features: [
       "Product catalog with advanced filtering and search",
       "Wishlist and cart management",
@@ -122,12 +122,13 @@ export const projects = [
       "Order tracking and history",
       "Scalable Laravel admin panel",
       "Fast, responsive Next.js storefront",
-      "Inventory and promotion management"
+      "Inventory and promotion management",
+      "Backend-managed shipping and logistics with DTDC integration (shipment creation, tracking, and status updates from admin panel)"
     ],
-    technologies: ["Laravel", "Next.js", "MySQL", "REST APIs", "Payment Integration"],
+    technologies: ["Laravel", "Next.js", "MySQL", "REST APIs", "Payment Integration","DTDC Shipping API"],
     category: "E-commerce",
     image: "/projects/karzandolls.jpg",
-    link: "",
+    link: "https://karzanddolls.in/",
     github: "",
     status: "In Progress"
   },
