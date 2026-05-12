@@ -8,7 +8,15 @@ import { projects } from '../mock/portfolioData';
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [showAllTech, setShowAllTech] = useState({});
   const sectionRef = useRef(null);
+
+  const toggleTech = (projectId) => {
+    setShowAllTech(prev => ({
+      ...prev,
+      [projectId]: !prev[projectId]
+    }));
+  };
 
   useEffect(() => {
     const currentRef = sectionRef.current;
@@ -59,9 +67,8 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div
-          className={`text-center mb-16 transition-all duration-1000 transform ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-          }`}
+          className={`text-center mb-16 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+            }`}
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
             Featured <span className="bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent">Projects</span>
@@ -77,9 +84,8 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`group transition-all duration-1000 delay-${index * 100} transform ${
-                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-              }`}
+              className={`group transition-all duration-1000 delay-${index * 100} transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                }`}
             >
               <Card className="h-full bg-gradient-to-br from-white to-slate-50 border-slate-200 hover:border-cyan-300 hover:shadow-2xl transition-all duration-300 overflow-hidden">
                 {/* Project Image Placeholder */}
@@ -128,20 +134,25 @@ const Projects = () => {
                   )}
 
                   {/* Technologies */}
+                  {/* Technologies */}
                   <div className="mb-4">
                     <div className="flex flex-wrap gap-2">
-                      {project.technologies.slice(0, 5).map((tech, i) => (
+                      {project.technologies.slice(0, showAllTech[project.id] ? project.technologies.length : 5).map((tech, i) => (
                         <span
                           key={i}
-                          className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-medium border border-slate-200"
+                          className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-medium border border-slate-200 hover:bg-slate-200 transition-colors"
                         >
                           {tech}
                         </span>
                       ))}
+
                       {project.technologies.length > 5 && (
-                        <span className="px-3 py-1 bg-slate-100 text-slate-500 rounded-full text-xs font-medium border border-slate-200">
-                          +{project.technologies.length - 5} more
-                        </span>
+                        <button
+                          onClick={() => toggleTech(project.id)}
+                          className="px-3 py-1 bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 rounded-full text-xs font-medium border border-slate-200 transition-all active:scale-95"
+                        >
+                          {showAllTech[project.id] ? 'Show less' : `+${project.technologies.length - 5} more`}
+                        </button>
                       )}
                     </div>
                   </div>
