@@ -1,96 +1,90 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Award, Trophy, Zap, Target, Code, Users } from 'lucide-react';
-import { achievements } from '../mock/portfolioData';
+import React, { useEffect, useRef, useState } from "react";
+import { Award, Trophy, Zap, Target, Code, Users } from "lucide-react";
+import { achievements } from "../mock/portfolioData";
+
+const icons = [Trophy, Award, Zap, Target, Code, Users];
+const colors = [
+  "from-amber-500 to-orange-500",
+  "from-cyan-500 to-teal-500",
+  "from-orange-500 to-rose-500",
+  "from-emerald-500 to-green-500",
+  "from-sky-500 to-cyan-500",
+  "from-fuchsia-500 to-pink-500"
+];
 
 const Achievements = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const currentRef = sectionRef.current;
+    const current = sectionRef.current;
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
+      ([entry]) => entry.isIntersecting && setIsVisible(true),
       { threshold: 0.1 }
     );
-
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
-
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
-    };
+    if (current) observer.observe(current);
+    return () => current && observer.unobserve(current);
   }, []);
 
-  const icons = [Trophy, Award, Zap, Target, Code, Users];
-  const colors = [
-    'from-yellow-500 to-orange-500',
-    'from-cyan-500 to-teal-500',
-    'from-orange-500 to-red-500',
-    'from-emerald-500 to-green-500',
-    'from-blue-500 to-cyan-500',
-    'from-purple-500 to-pink-500'
-  ];
-
   return (
-    <section id="achievements" ref={sectionRef} className="py-20 bg-white dark:bg-slate-900">
+    <section
+      id="achievements"
+      ref={sectionRef}
+      data-testid="achievements-section"
+      className="py-24 bg-slate-50/60 dark:bg-[#0c0d14]"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Header */}
         <div
-          className={`text-center mb-16 transition-all duration-1000 transform ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+          className={`mb-16 text-center transition-all duration-1000 ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">
-            Achievements & <span className="bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent">Recognition</span>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-cyan-500/40" />
+            <span className="text-sm sm:text-base font-mono font-semibold uppercase tracking-[0.25em] text-cyan-600 dark:text-cyan-400">
+              06 — Achievements
+            </span>
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-cyan-500/40" />
+          </div>
+          <h2 className="font-display text-6xl sm:text-7xl lg:text-8xl font-bold text-slate-900 dark:text-white tracking-tight leading-[1.05]">
+            Milestones &amp;{" "}
+            <span className="font-serif-accent italic text-cyan-600 dark:text-cyan-400">
+              recognition.
+            </span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-cyan-600 to-teal-600 mx-auto mb-4"></div>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Milestones and recognitions that mark my journey as a developer.
-          </p>
         </div>
 
-        {/* Achievements Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {achievements.map((achievement, index) => {
-            const IconComponent = icons[index % icons.length];
-            const colorClass = colors[index % colors.length];
-
+            const Icon = icons[index % icons.length];
+            const gradient = colors[index % colors.length];
             return (
               <div
                 key={achievement.id}
-                className={`group transition-all duration-1000 delay-${index * 100} transform ${
-                  isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                className={`group transition-all duration-1000 ${
+                  isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="relative h-full bg-gradient-to-br from-slate-50 to-white dark:from-slate-800 dark:to-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 hover:border-cyan-300 dark:hover:border-cyan-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                  {/* Icon Badge */}
+                <div className="relative h-full p-6 rounded-2xl bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 hover:border-cyan-400/60 dark:hover:border-cyan-400/40 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl overflow-hidden">
                   <div className="relative mb-4">
-                    <div className={`inline-flex p-4 bg-gradient-to-r ${colorClass} rounded-xl shadow-lg`}>
-                      <IconComponent className="w-8 h-8 text-white" />
+                    <div
+                      className={`inline-flex p-3.5 rounded-xl bg-gradient-to-br ${gradient} shadow-lg`}
+                    >
+                      <Icon className="w-6 h-6 text-white" />
                     </div>
-                    {/* Year Badge */}
-                    <div className="absolute -top-2 -right-2 px-3 py-1 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full text-xs font-bold shadow-lg">
+                    <div className="absolute -top-1 -right-1 px-2 py-0.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-[10px] font-mono font-bold shadow">
                       {achievement.year}
                     </div>
                   </div>
-
-                  {/* Content */}
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+                  <h3 className="font-display text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                     {achievement.title}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                     {achievement.description}
                   </p>
-
-                  {/* Decorative Element */}
-                  <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-100 to-teal-100 dark:from-cyan-900/20 dark:to-teal-900/20 rounded-tl-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                  <div className="absolute -bottom-12 -right-12 w-32 h-32 rounded-full bg-gradient-to-br from-cyan-200/30 to-teal-200/20 dark:from-cyan-500/10 dark:to-teal-500/10 opacity-50 group-hover:opacity-100 transition-opacity" />
                 </div>
               </div>
             );

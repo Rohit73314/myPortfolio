@@ -1,25 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const ScrollProgress = () => {
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const progress = (window.scrollY / totalHeight) * 100;
-      setScrollProgress(progress);
+    const onScroll = () => {
+      const total = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      setProgress(total > 0 ? (window.scrollY / total) * 100 : 0);
     };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 h-1 bg-slate-200 dark:bg-slate-800">
+    <div className="fixed top-0 left-0 right-0 z-[60] h-[3px] bg-transparent">
       <div
-        className="h-full bg-gradient-to-r from-cyan-600 via-teal-600 to-emerald-600 transition-all duration-150 ease-out"
-        style={{ width: `${scrollProgress}%` }}
-      ></div>
+        className="h-full bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500"
+        style={{ width: `${progress}%`, transition: "width 120ms linear" }}
+      />
     </div>
   );
 };

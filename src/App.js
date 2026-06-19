@@ -10,7 +10,6 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Achievements from "./components/Achievements";
-import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import DarkModeToggle from "./components/DarkModeToggle";
@@ -20,7 +19,10 @@ import { Toaster } from "./components/ui/toaster";
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-900 transition-colors duration-300">
+    <div
+      data-testid="portfolio-root"
+      className="min-h-screen bg-white text-slate-900 dark:bg-[#0a0a0f] dark:text-slate-100 transition-colors duration-500 font-body selection:bg-cyan-500/30 selection:text-cyan-700 dark:selection:text-cyan-200"
+    >
       <ScrollProgress />
       <Navigation />
       <main id="home">
@@ -31,7 +33,6 @@ const Portfolio = () => {
         <Projects />
         <Skills />
         <Achievements />
-        <Testimonials />
         <Contact />
       </main>
       <Footer />
@@ -44,10 +45,10 @@ const Portfolio = () => {
 function App() {
   return (
     <ErrorBoundary>
-      <BrowserRouter basename="/myPortfolio">
+      <BrowserRouter>
         <Suspense fallback={<Loading message="Loading Portfolio..." />}>
           <Routes>
-            <Route path="/" element={<Portfolio />} />
+            <Route path="/myPortfolio" element={<Portfolio />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
