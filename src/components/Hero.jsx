@@ -90,8 +90,8 @@ const Hero = () => {
               <span className="bg-gradient-to-r from-cyan-600 to-teal-600 dark:from-cyan-400 dark:to-teal-400 bg-clip-text text-transparent">
                 <TypingAnimation
                   texts={[
-                    "Full-Stack Developer",
                     "Laravel Developer",
+                    "Backend Developer",
                     "React / Next.js Developer"
                   ]}
                   typingSpeed={80}
