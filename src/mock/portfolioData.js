@@ -22,9 +22,9 @@ export const about = {
     "Expert in CRM systems, API integration & performance optimization"
   ],
   stats: [
-    { label: "Years Experience", value: "1.5+" },
-    { label: "Projects Shipped", value: "10+" },
-    { label: "Technologies", value: "15+" },
+    { label: "Years Of Experience", value: "1.5+" },
+    { label: "CRM Features Delivered", value: "20+" },,
+    { label: "Performance Gain", value: "30%" },
     { label: "Client Satisfaction", value: "100%" }
   ]
 };
@@ -248,30 +248,30 @@ export const projects = [
     github: "",
     status: "Live"
   },
+  // {
+  //   id: 7,
+  //   title: "World Travels Network",
+  //   subtitle: "B2B Travel Network Portal",
+  //   description:
+  //     "B2B portal for travel partners — onboarding, agent wallets, bookings and reporting in a single login for the World Travels Network ecosystem.",
+  //   longDescription:
+  //     "World Travels Network is a B2B portal where partner agents log in, top-up wallets, access negotiated fares and manage their bookings & reports under a single network identity.",
+  //   features: [
+  //     "Partner / agent onboarding flow",
+  //     "Wallet top-up & ledger management",
+  //     "Booking & cancellation workflows",
+  //     "Sales & wallet reports per agent",
+  //     "Multi-role access (Admin / Agent / Accounts)"
+  //   ],
+  //   technologies: ["Laravel", "PHP", "MySQL", "REST APIs", "Bootstrap"],
+  //   category: "B2B Portal",
+  //   image: shot("https://www.worldtravelsnetwork.com/"),
+  //   link: "https://www.worldtravelsnetwork.com/",
+  //   github: "",
+  //   status: "Live"
+  // },
   {
     id: 7,
-    title: "World Travels Network",
-    subtitle: "B2B Travel Network Portal",
-    description:
-      "B2B portal for travel partners — onboarding, agent wallets, bookings and reporting in a single login for the World Travels Network ecosystem.",
-    longDescription:
-      "World Travels Network is a B2B portal where partner agents log in, top-up wallets, access negotiated fares and manage their bookings & reports under a single network identity.",
-    features: [
-      "Partner / agent onboarding flow",
-      "Wallet top-up & ledger management",
-      "Booking & cancellation workflows",
-      "Sales & wallet reports per agent",
-      "Multi-role access (Admin / Agent / Accounts)"
-    ],
-    technologies: ["Laravel", "PHP", "MySQL", "REST APIs", "Bootstrap"],
-    category: "B2B Portal",
-    image: shot("https://www.worldtravelsnetwork.com/"),
-    link: "https://www.worldtravelsnetwork.com/",
-    github: "",
-    status: "Live"
-  },
-  {
-    id: 8,
     title: "Birthdaymasti",
     subtitle: "E-commerce Cake Ordering Platform",
     description:
@@ -295,7 +295,7 @@ export const projects = [
     status: "Live"
   },
   {
-    id: 9,
+    id: 8,
     title: "Karzandolls",
     subtitle: "Collectibles E-commerce Platform",
     description:
@@ -327,7 +327,7 @@ export const projects = [
     status: "Completed"
   },
   {
-    id: 10,
+    id: 9,
     title: "Alumni Tracking System",
     subtitle: "Alumni Management Platform",
     description:

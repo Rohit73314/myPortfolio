@@ -32,7 +32,7 @@ const Testimonials = () => {
       id="testimonials"
       ref={sectionRef}
       data-testid="testimonials-section"
-      className="py-24 bg-white dark:bg-[#0a0a0f]"
+      className="py-8 bg-white dark:bg-[#0a0a0f]"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -41,14 +41,14 @@ const Testimonials = () => {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex items-center justify-center gap-1 mb-2">
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-cyan-500/40" />
             <span className="text-xs font-mono uppercase tracking-widest text-cyan-600 dark:text-cyan-400">
               07 — Testimonials
             </span>
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-cyan-500/40" />
           </div>
-          <h2 className="font-display text-6xl sm:text-7xl lg:text-8xl font-bold text-slate-900 dark:text-white tracking-tight">
+          <h2 className="font-display text-6xl sm:text-7xl lg:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
             What People <span className="font-serif-accent italic text-cyan-600 dark:text-cyan-400">Say</span>
           </h2>
         </div>

@@ -60,7 +60,7 @@ const Contact = () => {
       id="contact"
       ref={sectionRef}
       data-testid="contact-section"
-      className="py-24 bg-slate-50/60 dark:bg-[#0c0d14]"
+      className="py-8 bg-slate-50/60 dark:bg-[#0c0d14]"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -69,14 +69,14 @@ const Contact = () => {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex items-center justify-center gap-1 mb-2">
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-cyan-500/40" />
             <span className="text-sm sm:text-base font-mono font-semibold uppercase tracking-[0.25em] text-cyan-600 dark:text-cyan-400">
               07 — Get In Touch
             </span>
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-cyan-500/40" />
           </div>
-          <h2 className="font-display text-6xl sm:text-7xl lg:text-8xl font-bold text-slate-900 dark:text-white tracking-tight leading-[1.05]">
+          <h2 className="font-display text-6xl sm:text-7xl lg:text-4xl font-bold text-slate-900 dark:text-white tracking-tight leading-[1.05]">
             Have an idea? Let&apos;s{" "}
             <span className="font-serif-accent italic text-cyan-600 dark:text-cyan-400">
               build it.

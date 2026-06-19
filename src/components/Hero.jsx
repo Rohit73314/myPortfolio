@@ -37,21 +37,11 @@ const Hero = () => {
       {/* Grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.04] dark:opacity-[0.08] pointer-events-none"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(15,23,42,1) 1px, transparent 1px), linear-gradient(90deg, rgba(15,23,42,1) 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
-          maskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)"
-        }}
+        
       />
       <div
         className="hidden dark:block absolute inset-0 opacity-[0.08] pointer-events-none"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(34,211,238,1) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,1) 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
-          maskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)"
-        }}
+        
       />
 
       {/* Floating code snippets */}
@@ -79,7 +69,7 @@ const Hero = () => {
             </p>
 
             {/* Big name */}
-            <h1 className="font-display font-bold text-6xl sm:text-7xl lg:text-8xl leading-[1.05] tracking-tight mb-5">
+            <h1 className="font-display font-bold text-6xl sm:text-7xl lg:text-4xl leading-[1.05] tracking-tight mb-5">
               <span className="bg-gradient-to-r from-cyan-600 via-teal-600 to-emerald-600 dark:from-cyan-400 dark:via-teal-300 dark:to-emerald-300 bg-clip-text text-transparent">
                 {personalInfo.name}
               </span>

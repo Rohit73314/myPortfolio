@@ -49,7 +49,7 @@ const Skills = () => {
       id="skills"
       ref={sectionRef}
       data-testid="skills-section"
-      className="py-24 bg-white dark:bg-[#0a0a0f]"
+      className="py-8 bg-white dark:bg-[#0a0a0f]"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -58,21 +58,21 @@ const Skills = () => {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex items-center justify-center gap-1 mb-2">
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-cyan-500/40" />
             <span className="text-sm sm:text-base font-mono font-semibold uppercase tracking-[0.25em] text-cyan-600 dark:text-cyan-400">
               05 — Technical Skills
             </span>
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-cyan-500/40" />
           </div>
-          <h2 className="font-display text-6xl sm:text-7xl lg:text-8xl font-bold text-slate-900 dark:text-white tracking-tight leading-[1.05]">
+          <h2 className="font-display text-6xl sm:text-7xl lg:text-4xl font-bold text-slate-900 dark:text-white tracking-tight leading-[1.05]">
             Technical{" "}
             <span className="font-serif-accent italic text-cyan-600 dark:text-cyan-400">
               toolbox.
             </span>
           </h2>
           <p className="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            A focused stack I use to ship scalable, performant products.
+            A comprehensive toolkit of modern technologies and frameworks I use to build scalable applications
           </p>
         </div>
 
