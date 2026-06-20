@@ -2,7 +2,7 @@
 
 export const personalInfo = {
   name: "Rohit Singh",
-  role: "Full-Stack Web Developer",
+  role: "Backend Developer",
   tagline: "Building scalable web applications with modern technologies",
   email: "singhrohit73314@gmail.com",
   phone: "+91 9667305448",
