@@ -40,7 +40,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-slate-400 leading-relaxed mb-5">
-              Full-Stack Web Developer building scalable CRMs, SaaS &amp; AI-powered platforms for
+              Backend Developer building scalable CRMs, SaaS &amp; AI-powered platforms for
               travel, aviation and hotels.
             </p>
             <div className="flex gap-2">

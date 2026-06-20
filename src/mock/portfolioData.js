@@ -14,7 +14,7 @@ export const personalInfo = {
 
 export const about = {
   description:
-    "Passionate Full-Stack Web Developer with 1.5+ years of experience specializing in PHP, Laravel, React, and Next.js. I build and optimize scalable web applications with a focus on performance, clean code, and seamless user experiences. My expertise spans API integration, backend optimization, and modern frontend development.",
+    "Passionate Backend Developer with 1.5+ years of experience specializing in PHP, Laravel, React, and Next.js. I build and optimize scalable web applications with a focus on performance, clean code, and seamless user experiences. My expertise spans API integration, backend optimization, and modern frontend development.",
   highlights: [
     "1.5+ years of professional development experience",
     "Specialized in Laravel, React, Next.js, and MySQL",
