@@ -204,30 +204,30 @@ export const projects = [
     status: "Live",
     impact: "Unified hotel inventory across 3 major suppliers + own inventory"
   },
+  // {
+  //   id: 5,
+  //   title: "Fareease",
+  //   subtitle: "B2C Flight & Holiday Booking Site",
+  //   description:
+  //     "Consumer-facing travel website for Fareease offering flight search, holiday packages and enquiry capture with a clean, conversion-focused funnel.",
+  //   longDescription:
+  //     "Fareease.in is a consumer travel storefront — flight search, holiday packages, deal banners and enquiry forms — built for high-intent conversions and tightly integrated with the back-office CRM.",
+  //   features: [
+  //     "Flight search & enquiry flow",
+  //     "Holiday & honeymoon package showcase",
+  //     "Lead capture forms with CRM hand-off",
+  //     "SEO-optimised landing pages",
+  //     "Responsive, fast-loading storefront"
+  //   ],
+  //   technologies: ["Laravel", "PHP", "MySQL", "Bootstrap", "jQuery"],
+  //   category: "Travel Website",
+  //   image: shot("https://fareease.in/"),
+  //   link: "https://fareease.in/",
+  //   github: "",
+  //   status: "Live"
+  // },
   {
     id: 5,
-    title: "Fareease",
-    subtitle: "B2C Flight & Holiday Booking Site",
-    description:
-      "Consumer-facing travel website for Fareease offering flight search, holiday packages and enquiry capture with a clean, conversion-focused funnel.",
-    longDescription:
-      "Fareease.in is a consumer travel storefront — flight search, holiday packages, deal banners and enquiry forms — built for high-intent conversions and tightly integrated with the back-office CRM.",
-    features: [
-      "Flight search & enquiry flow",
-      "Holiday & honeymoon package showcase",
-      "Lead capture forms with CRM hand-off",
-      "SEO-optimised landing pages",
-      "Responsive, fast-loading storefront"
-    ],
-    technologies: ["Laravel", "PHP", "MySQL", "Bootstrap", "jQuery"],
-    category: "Travel Website",
-    image: shot("https://fareease.in/"),
-    link: "https://fareease.in/",
-    github: "",
-    status: "Live"
-  },
-  {
-    id: 6,
     title: "FFD Travels",
     subtitle: "Travel Agency Storefront & Enquiry Engine",
     description:
@@ -271,7 +271,7 @@ export const projects = [
   //   status: "Live"
   // },
   {
-    id: 7,
+    id: 6,
     title: "Birthdaymasti",
     subtitle: "E-commerce Cake Ordering Platform",
     description:
@@ -295,7 +295,7 @@ export const projects = [
     status: "Live"
   },
   {
-    id: 8,
+    id: 7,
     title: "Karzandolls",
     subtitle: "Collectibles E-commerce Platform",
     description:
@@ -327,7 +327,7 @@ export const projects = [
     status: "Completed"
   },
   {
-    id: 9,
+    id: 8,
     title: "Alumni Tracking System",
     subtitle: "Alumni Management Platform",
     description:
