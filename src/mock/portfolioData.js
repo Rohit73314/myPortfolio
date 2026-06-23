@@ -297,9 +297,10 @@ export const projects = [
   {
     id: 7,
     title: "Karzandolls",
-    subtitle: "Collectibles E-commerce Platform",
+    subtitle: "E-commerce — Diecast models, action figures, collectibles",
     description:
-      "Rebuilt an existing collectibles e-commerce site on a modern stack — Laravel backend + Next.js storefront, with DTDC shipping fully managed from the admin panel.",
+      // "Rebuilt an existing collectibles e-commerce site on a modern stack — Laravel backend + Next.js storefront, with DTDC shipping fully managed from the admin panel.",
+      "Online store with catalog browsing, wishlist, and secure checkout. Developed and maintained as part of the e-commerce portfolio.",
     longDescription:
       "A complete platform overhaul focusing on performance, user experience and scalability. Implemented modern best practices and optimised for high traffic scenarios, including backend-managed shipping operations via DTDC integration.",
     features: [
@@ -310,11 +311,12 @@ export const projects = [
       "Scalable Laravel admin panel",
       "Fast, responsive Next.js storefront",
       "Inventory and promotion management",
-      "Backend-managed DTDC shipping (creation, tracking, status updates)"
+      "Backend-managed DTDC shipping (creation, tracking, status updates)",
+      "Preorder Flow"
     ],
     technologies: [
       "Laravel",
-      "Next.js",
+      // "Next.js",
       "MySQL",
       "REST APIs",
       "Payment Integration",
