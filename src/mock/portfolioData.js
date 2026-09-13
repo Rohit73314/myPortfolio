@@ -14,7 +14,7 @@ export const personalInfo = {
 
 export const about = {
   description:
-    "Passionate Backend Developer with 1.5+ years of experience specializing in PHP, Laravel, React, and Next.js. I build and optimize scalable web applications with a focus on performance, clean code, and seamless user experiences. My expertise spans API integration, backend optimization, and modern frontend development.",
+    "Passionate Backend Developer with 2+ years of experience specializing in PHP, Laravel, React, and Next.js. I build and optimize scalable web applications with a focus on performance, clean code, and seamless user experiences. My expertise spans API integration, backend optimization, and modern frontend development.",
   highlights: [
     "1.5+ years of professional development experience",
     "Specialized in Laravel, React, Next.js, and MySQL",
@@ -22,7 +22,7 @@ export const about = {
     "Expert in CRM systems, API integration & performance optimization"
   ],
   stats: [
-    { label: "Years Of Experience", value: "1.5+" },
+    { label: "Years Of Experience", value: "2+" },
     { label: "CRM Features Delivered", value: "20+" },,
     { label: "Performance Gain", value: "30%" },
     { label: "Client Satisfaction", value: "100%" }
@@ -58,7 +58,7 @@ export const experience = [
       "Improved system stability through rigorous testing and code reviews",
       "Learned best practices in scalable backend architecture"
     ],
-    technologies: ["Laravel", "PHP", "MySQL", "Git"]
+    technologies: ["Laravel", "PHP", "MySQL", "JS", "Git"]
   }
 ];
 
@@ -99,7 +99,6 @@ export const projects = [
       "Hotel APIs",
       "Razorpay Subscriptions",
       "WhatsApp Cloud API",
-      "SendGrid",
       "AI / LLM"
     ],
     highlights: [
@@ -125,8 +124,7 @@ export const projects = [
     features: [
       "Lead capture from multiple sources with auto assignment",
       "Customer 360 profile with travel history & notes",
-      "Agent follow-up tracker with call / SMS / email log",
-      "Live conversion & revenue dashboard for management",
+      "Revenue dashboard for management",
       "Daily / weekly / monthly lead reporting with filters",
       "Role-based access for Sales, Supervisor & Admin"
     ],
@@ -148,7 +146,7 @@ export const projects = [
     longDescription:
       "Punjab Aviation goes beyond a regular CRM. The platform maintains its own flight inventory, supports a full booking flow (search → hold → pay → issue) and allows multiple staff roles to collaborate on every booking with audit trails.",
     features: [
-      "Own flight inventory management (routes, fares, seats)",
+      "Own flight inventory management (routes, fares, seats, fixed depature)",
       "Complete booking flow: search → hold → confirm → ticket",
       "Multi-staff workspace with role-based permissions",
       "Customer & lead management built-in",
@@ -201,30 +199,30 @@ export const projects = [
     status: "Live",
     impact: "Unified hotel inventory across 3 major suppliers + own inventory"
   },
-  // {
-  //   id: 5,
-  //   title: "Fareease",
-  //   subtitle: "B2C Flight & Holiday Booking Site",
-  //   description:
-  //     "Consumer-facing travel website for Fareease offering flight search, holiday packages and enquiry capture with a clean, conversion-focused funnel.",
-  //   longDescription:
-  //     "Fareease.in is a consumer travel storefront — flight search, holiday packages, deal banners and enquiry forms — built for high-intent conversions and tightly integrated with the back-office CRM.",
-  //   features: [
-  //     "Flight search & enquiry flow",
-  //     "Holiday & honeymoon package showcase",
-  //     "Lead capture forms with CRM hand-off",
-  //     "SEO-optimised landing pages",
-  //     "Responsive, fast-loading storefront"
-  //   ],
-  //   technologies: ["Laravel", "PHP", "MySQL", "Bootstrap", "jQuery"],
-  //   category: "Travel Website",
-  //   image: shot("https://fareease.in/"),
-  //   link: "https://fareease.in/",
-  //   github: "",
-  //   status: "Live"
-  // },
   {
     id: 5,
+    title: "Fareease",
+    subtitle: "B2C Flight, Hotel & Holiday Booking Site",
+    description:
+      "Consumer-facing travel website for Fareease offering flight search,hotel search, holiday packages and enquiry capture with a clean, conversion-focused funnel.",
+    longDescription:
+      "Fareease.in is a consumer travel storefront — flight search,hotel search holiday packages, deal banners and enquiry forms — built for high-intent conversions and tightly integrated with the back-office CRM.",
+    features: [
+      "Flight search, Hotel search with live booking",
+      "Holiday & honeymoon package showcase",
+      "Lead capture forms with CRM hand-off",
+      // "SEO-optimised landing pages",
+      "Responsive, fast-loading storefront"
+    ],
+    technologies: ["Next.js","Laravel", "PHP", "MySQL", "Bootstrap", "jQuery"],
+    category: "Travel Website",
+    image: shot("https://fareease.in/"),
+    link: "https://fareease.in/",
+    github: "",
+    status: "Live"
+  },
+  {
+    id: 6,
     title: "FFD Travels",
     subtitle: "Travel Agency Storefront & Enquiry Engine",
     description:
@@ -268,7 +266,7 @@ export const projects = [
   //   status: "Live"
   // },
   {
-    id: 6,
+    id: 7,
     title: "Birthdaymasti",
     subtitle: "E-commerce Cake Ordering Platform",
     description:
@@ -282,7 +280,8 @@ export const projects = [
       "Real-time order tracking system",
       "Admin panel for inventory management",
       "Customer reviews and ratings",
-      "Promotional offers and discount management"
+      "Promotional offers and discount management",
+      "Multivendor Management"
     ],
     technologies: ["Laravel", "Next.js", "PHP", "JavaScript", "MySQL", "REST APIs"],
     category: "E-commerce",
@@ -292,7 +291,7 @@ export const projects = [
     status: "Live"
   },
   {
-    id: 7,
+    id: 8,
     title: "Karzandolls",
     subtitle: "E-commerce — Diecast models, action figures, collectibles",
     description:
@@ -313,7 +312,7 @@ export const projects = [
     ],
     technologies: [
       "Laravel",
-      // "Next.js",
+      "Next.js",
       "MySQL",
       "REST APIs",
       "Payment Integration",
@@ -323,10 +322,10 @@ export const projects = [
     image: shot("https://www.karzanddolls.com/"),
     link: "https://www.karzanddolls.com/",
     github: "",
-    status: "Completed"
+    status: "Live"
   },
   {
-    id: 8,
+    id: 9,
     title: "Alumni Tracking System",
     subtitle: "Alumni Management Platform",
     description:
@@ -360,7 +359,7 @@ export const skills = {
     { name: "React.js", level: 85 },
     { name: "Next.js", level: 82 },
     { name: "JavaScript", level: 88 },
-    { name: "Tailwind CSS", level: 80 },
+    // { name: "Tailwind CSS", level: 80 },
     { name: "Bootstrap", level: 80 }
   ],
   database: [
@@ -372,7 +371,7 @@ export const skills = {
     { name: "Git", level: 85 },
     { name: "GitHub", level: 85 },
     { name: "AWS EC2", level: 70 },
-    { name: "Razorpay", level: 78 }
+    // { name: "Razorpay", level: 78 }
   ],
   other: [
     { name: "DSA", level: 75 },
@@ -428,7 +427,14 @@ export const achievements = [
     description:
       "Shipped Razorpay subscriptions, WhatsApp Cloud API and AI package generation in TravoByte",
     year: "2025"
-  }
+  },
+  {
+  id: 5,
+  title: "Rising Star Award",
+  description:
+    "Received the Rising Star Award during my Trainee tenure at Nibble Software for outstanding performance and contributions to development projects.",
+  year: "2025"
+}
 ];
 
 export const testimonials = [
