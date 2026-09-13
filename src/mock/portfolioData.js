@@ -120,7 +120,7 @@ export const projects = [
     description:
       "Internal flight CRM for Metairfare that captures every enquiry, routes leads to the right agent and runs daily / weekly conversion & revenue reports for the management team.",
     longDescription:
-      "A dedicated CRM for Metairfare's flight desk. The platform centralises lead capture (calls, web, ads), customer profiles, follow-ups and ticketing — and pushes role-based reports that show conversion, source ROI and agent performance.",
+      "A dedicated CRM for Metairfare's flight desk. The platform centralises lead capture , customer profiles, follow-ups and ticketing — and pushes role-based reports that show conversion, source ROI and agent performance.",
     features: [
       "Lead capture from multiple sources with auto assignment",
       "Customer 360 profile with travel history & notes",
